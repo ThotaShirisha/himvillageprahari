@@ -2,16 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Oxygen', sans-serif;
 }
 
 body {
-    background-color: #f4f4f4;
+    background-color: #000000;
     color: #333;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Oxygen', sans-serif;
 }
-html, body {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+html {
+    overflow-x:hidden; /* Prevent horizontal scrolling */
 }
 
 header {
@@ -136,19 +136,108 @@ nav {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.main-body p{
+.main-body-p{
     position: absolute;
     top:51%;
     left:11%;
-    color: #00845e;
+    color: #00412e;
     font-size: 25px;
     text-decoration: none;
     font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding:5px;
+}
+
+.main-body-des{
+    position: absolute;
+    top:58%;
+    left:11%;
+    color: #dfdfdf;
+    font-size: 20px;
+    text-decoration: none;
+    width:50%;
+    text-align: justify;
+}
+
+.main-body-btn{
+    position: absolute;
+    top:75%;
+    left:11%;
+    color: #cdcdcd;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #7c7c7c;
+    padding:10px 20px;
+    transition: background-color 0.3s;
+    border:none;
+    cursor: pointer;
+}
+
+.main-body-btn:hover{
+    background-color: #363636;
 }
 
 .section2{
-    width:100%;
+    width:100vw;
     height:auto;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.card1, .card2{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 50%;
+    position: relative;
+    margin: auto;
+}
+
+.card1 img, .card2 img {
+    width: 100%; /* Cover the full width of card1-img */
+    height: 100%; /* Cover the full height of card1-img */
+    object-fit: contain; /* Maintain aspect ratio */
+}
+  
+.txt-card1 {
+    flex-grow: 1; /* Take up the remaining space */
+    height: 100%;
+    background-color: #dadada;
+    font-size: 45px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    flex-direction: column;
+}
+
+.txt-card1 p {
+    font-size:medium;
+    width:300px;
+    text-align: justify;
+    margin:15px;
+}
+
+.card-btn{
+    background-color: #008e66;
+    padding:10px 20px;
+    transition: background-color 0.3s;
+    border:none;
+    cursor: pointer;
+    color: #cdcdcd;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.card-btn:hover{
+    background-color: #005f45;
 }
 
 h1{
@@ -169,4 +258,93 @@ h2{
     transition: color 0.3s;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     margin:10px;
+}
+
+.section3{
+    width:100vw;
+    height:500px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.section3 h2{
+    color: #000000;
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    text-shadow: none;
+    text-align: left;
+    margin:0;
+    top:60px;
+    left:100px;
+    position: relative;
+}
+
+.section3 p{
+    color: #434242;
+    font-size: 17px;
+    text-decoration: none;
+    transition: color 0.3s;
+    text-align: justify;
+    margin:0;
+    top:90px;
+    left:100px;
+    position: relative;
+    width:50%;
+}
+.sec3txt-img{
+    display: flex;
+}
+
+.sec3img{
+    position: relative;
+    right:10%;
+    min-width: 400px;
+}
+
+.sec3img img{
+    width: 100%; /* Cover the full width of card1-img */
+    height: 100%; /* Cover the full height of card1-img */
+    object-fit: contain; /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    border: none;
+}
+
+.section4 {
+    width: 100vw;
+    height: 200px;
+    background-image: url(flora.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* This will cover the entire section */
+    text-align: center;
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    background-color: transparent;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+.stat {
+    flex: 1;
+}
+.stat h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #00b381;
+}
+.stat p {
+    margin: 0;
+    font-size: 1rem;
+    color: #dfdfdf;
+}
+
+.material-symbols-outlined{
+    color: #ffffff;
+    font-size: 50px;
 }
