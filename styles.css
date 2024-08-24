@@ -354,3 +354,202 @@ h2{
     color: #ffffff;
     font-size: 50px;
 }
+
+.section5 {
+    width: 100vw;
+    padding: 50px 10%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section5 h2 {
+    color: #2d6a4f;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    align-self: flex-start; /* Aligns the h2 to the left */
+    margin-left: 0; /* Optional: Removes default margin */
+}
+
+.section5 p {
+    color: #434242;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify; 
+    margin: 20px auto;
+    width: 70%;
+}
+/* 
+.unique-section {
+    width: 100vw;
+    padding: 60px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.unique-card-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.unique-rect-card {
+    width: 30%;
+    height: 300px;
+    background-color: #2d6a4f;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    text-align: center;
+}
+
+.unique-square-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35%;
+    height: 300px;
+    margin:0 10px;
+}
+
+.unique-square-card {
+    height: calc(50% - 10px);
+    background-color: #dadada;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.unique-square-card:last-child {
+    margin-bottom: 0;
+} */
+
+
+/* Container for the entire section */
+.unique-section {
+    width: 100vw;
+    padding: 60px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container for each row of cards */
+.unique-card-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style for the rectangular card */
+.unique-rect-card {
+    width: 30%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.unique-rect-card:hover {
+    box-shadow: 0 5px 10px rgba(0, 97, 16, 0.9);
+}
+
+.unique-square-card:hover {
+    box-shadow: 0 5px 10px rgba(0, 97, 16, 0.9);
+
+}
+
+/* Container for the square cards */
+.unique-square-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35%;
+    height: 300px;
+    margin: 5px 10px;
+}
+
+/* Style for each square card */
+.unique-square-card {
+    height: calc(50% - 10px);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.unique-square-card:last-child {
+    margin-bottom: 5px;
+}
+
+.cardtxt-sq{
+    font-size: 20px;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 90%;
+    max-height: 85%;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cardtxt-rec{
+    font-size: 20px;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 90%;
+    max-height: 85%;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cardtxt-rec:hover, .cardtxt-sq:hover{
+    background-color: rgba(236, 255, 204, 0.9);
+}
+
+.cardtxt-rec h3, .cardtxt-sq h3{
+    color: #00412e;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin:5px;
+}
+
+.cardtxt-rec p, .cardtxt-sq p{
+    color: #000000;
+    font-size: 15px;
+    text-decoration: none;
+    max-width: 95%;
+    margin:5px;
+}
