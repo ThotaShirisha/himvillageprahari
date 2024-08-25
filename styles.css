@@ -357,7 +357,7 @@ h2{
 
 .section5 {
     width: 100vw;
-    padding: 50px 10%;
+    padding: 50px;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -381,7 +381,7 @@ h2{
     line-height: 1.6;
     text-align: justify; 
     margin: 20px auto;
-    width: 70%;
+    width: 85%;
 }
 /* 
 .unique-section {
@@ -552,4 +552,162 @@ h2{
     text-decoration: none;
     max-width: 95%;
     margin:5px;
+}
+
+.section6 {
+    position: relative;
+    text-align: center;
+    width: 100vw;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Ensure the video stays behind the content */
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Ensure content stays above the video */
+    color: white; /* Change text color for visibility */
+}
+
+.section6 h2 {
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    padding-left: 50px;
+}
+
+.section6 p {
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+    width: 85%; /* Ensure the text takes up 60% of the width */
+}
+
+.mentor-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+}
+
+.mentors {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 22%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.mentors:hover {
+    transform: translateY(-10px);
+}
+
+.mentor-img img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.mentor-txt {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 400px;
+}
+
+.mentor-txt h6 {
+    color: #2d6a4f;
+    font-size: 18px;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.mentor-txt p {
+    color: #777;
+    font-size: 14px;
+    margin: 0;
+}
+
+.mentor-social {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+.mentor-social a {
+    color: #777;
+    font-size: 20px;
+    margin: 0 5px;
+    transition: color 0.3s;
+    padding:5px;
+    border: #ccc solid 2px;
+}
+
+.mentor-social a:hover i {
+    color: #000000;
+    transition: color 0.3s ease;
+}
+
+/* .mentor-social a:hover {
+    color: #00b381;
+    transition: color 0.3s ease;
+    border: #00b381 solid 2px;
+} */
+
+.facebook:hover {
+    background-color: #1877F2;
+    transition: color 0.3s ease;
+    border: #1877F2 solid 2px;
+}
+
+.twitter:hover {
+    background-color: #3cb3fd;
+    transition: color 0.3s ease;
+    border: #3cb3fd solid 2px;
+}
+
+.instagram:hover {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #8a3ab9, #4a69bb, #1e96c8, #00b381);
+    transition: color 0.3s ease;
+    border: #fff solid 2px;
+}
+
+.linkedin:hover {
+    background-color: #0077B5;
+    transition: color 0.3s ease;
+    border: #0077B5 solid 2px;
+}
+
+.mentor-social a i{
+    color: #777;
+    font-size: 20px;
+    margin: 10px;
+    transition: color 0.3s;
+    gap: 10px;
 }
