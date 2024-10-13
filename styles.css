@@ -863,47 +863,10 @@ h2{
     margin-right: auto;
 }
 
-.volunteers {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-}
 
-.volunteer {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: calc(25% - 30px);
-    padding: 20px;
-    transition: transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
 
-}
 
-.volunteer:hover {
-    transform: translateY(-10px);
-}
 
-.volunteer-img img {
-    width: 70%;
-    height: auto;
-    border-radius: 35%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.volunteer-txt h6 {
-    color: #333333;
-    font-size: 20px;
-    margin-top: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
 
 
 
@@ -1057,9 +1020,9 @@ h2{
     color: #434242;
     font-size: 18px;
     line-height: 1.6;
-    text-align: center;
+    text-align: justify;
     margin-bottom: 20px;
-    width: 70%; /* Ensure the text takes up 60% of the width */
+    width: 90%; 
     margin-left: auto;
     margin-right: auto;
   }
@@ -1068,42 +1031,46 @@ h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 2%;
   }
   
   .team-member {
-    width: 300px;
-    text-align: center;
-    background: #fff;
+    background-color: white;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    width: 22%;
+    text-align: center;
+    transition: transform 0.3s;
   }
   
   .team-img img {
-    width: 200px;
-    height: 200px;    
-    min-width: 200px;
-    min-height: 200px;
-    border-radius: 50%;
-    border: none;
-    margin-bottom: 15px;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    min-height: 280px;
+    min-width: 100%;
   }
   
   .team-info {
-    padding: 20px;
-  }
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    min-height: 400px;  }
   
   .team-info h6 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #333;
+    color: #2d6a4f;
+    font-size: 18px;
+    margin: 10px 0 5px;
+    font-weight: bold;
   }
   
   .team-info p {
-    font-size: 1em;
-    color: #666;
-    margin: 5px 0;
+    color: #777;
+    font-size: 14px;
+    margin: 0;
   }
   
   @media (max-width: 768px) {
@@ -1112,3 +1079,9 @@ h2{
     }
   }
   
+  strong{
+    color: #000000;
+    font-weight: bold;
+    text-align: left !important;
+    padding: 5px 0;
+  }
