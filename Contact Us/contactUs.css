@@ -12,26 +12,28 @@ body{
 }
 /* Header */
 header {
-    width: 100%;
-    height: 120px;
     color: white;
     padding: 1rem 0;
-    background-color: #000000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-
+	background-color: black;
+	height: 120px;
 }
 
-.header-container {
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 100vh;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
+	background-color: black;
+	color: #fff;
 }
+
+/* .top {
+    width: 100vw; 
+    height:100vh; 
+    background: url('man-7155142.jpg') no-repeat center center/cover;
+} */
 
 .logo{
     display: flex;
@@ -94,7 +96,7 @@ nav {
     background-color: #ffffff;
 }
 
-@media (max-width: 100vh) {
+@media (max-width: 768px) {
     .nav-links {
         display: none;
     }
@@ -117,7 +119,7 @@ nav {
 
 
 /* Conatct Section */
-.container{
+.body-container{
 	width: 100%;
 	min-height: 100vh;
 	display: flex;
@@ -157,8 +159,9 @@ section.left .contactTitle h2::before{
 	width: 50%;
 	height: 1px;
 	background-color: #fff;
-	top: 120%;
+	top: 100%;
 	left: 0;
+	margin-top: -70px;
 }
 section.left .contactTitle h2::after{
 	content: '';
@@ -204,6 +207,7 @@ section.left .contactInfo{
 	display: block;
 	color: #333;
 	font-size: 18px;
+	font-weight: 600;
 }
 .iconGroup .details span:nth-child(1){
 	text-transform: uppercase;
@@ -384,20 +388,34 @@ textarea::-webkit-scrollbar-thumb{
 /* FOOTER */
 
 .footer {
-    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 0;
     text-align: center;
-    padding: 30px 0;
-    /* margin: 0 0 0 10%; */
+    font-size: 14px;
 }
-/* .footer h4 {
-    margin-bottom: 25px;
-    margin-top: 20px;
-    font-weight: 600;
-} */
 
-.icons .fa {
-    color: #2D6A4F;
-    margin: 0 13px;
-    cursor: pointer;
-    padding: 18px 0;
+.social-media-icons {
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+.footer-bottom a {
+    color: #0077b5; /* LinkedIn Color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-bottom a:hover {
+    color: #005582;
 }
