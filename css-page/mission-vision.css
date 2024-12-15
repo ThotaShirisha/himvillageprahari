@@ -277,48 +277,6 @@ nav {
 
 /* nav bar section */
 
-/* .navbar{
-    background-color: #ccc;
-    padding: 5px;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.pages-container{
-    width: 80%;
-     padding-top: 18px;
-}
-
-.pages-container ul{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 5px;
-}
-
-
-.website-logo{
-    height: 40px;
-    border-radius: 20px;
-    margin: 1px auto;
-    display: block;
-    
-}
-
-
-.anchar-style{
-    text-decoration: none;
-    list-style: none;
-    color: black;
-}
-
-.anchar-style li{
-    font-size: 17px;
-    cursor: pointer;
-} */
-
-
 
 /* hero section styling */
 
@@ -344,7 +302,7 @@ nav {
     left: 20px;
     width: 100%;
     height: 100%;
-    background: #65af96;
+    background: #c8f3e5;
     border-radius: 10px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
@@ -515,7 +473,7 @@ nav {
 .about-card {
     width: 90%;
     max-width: 1000px;
-    background: #e9e8e8;
+    background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -535,9 +493,10 @@ nav {
 }
 
 .about-card p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #555;
     line-height: 1.6;
+    
 }
 
 .about-card .about-image {
@@ -742,7 +701,7 @@ nav {
     border-radius: 10px;
     margin-top: 100px;
     margin-bottom: 100px;
-    background: url(../img/natur-abdulkayum97-25490373.jpg);
+    background: url(../img/villege-img.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -892,14 +851,14 @@ nav {
   
   /* Button Styling */
   #cta-button {
-    background-color: #27ae60; /* Green color for call to action */
+    background-color: #27ae60; 
     color: white;
     padding: 18px 40px;
     font-size: 1.2rem;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    text-transform: uppercase; /* Uppercase text for a bold look */
+    text-transform: uppercase; 
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   }
@@ -907,13 +866,13 @@ nav {
   /* Button Hover Effects */
   #cta-button:hover {
     background-color: #2ecc71;
-    transform: translateY(-5px); /* Lift effect */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   }
   
   #cta-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Larger shadow for card on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); 
   }
   
   /* Responsive Design for Mobile */
