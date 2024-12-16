@@ -468,12 +468,12 @@ h2{
 }
 
 .cardtxt-rec{
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.8);
     max-width: 90%;
-    max-height: 85%;
-    padding:10px;
+    max-height: 80%;
+    padding:5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -497,16 +497,17 @@ h2{
     color: #000000;
     font-size: 15px;
     text-decoration: none;
-    max-width: 95%;
-    margin:5px;
+    max-width: 100%;
+    margin:10px;
 }
 
 .section6 {
     position: relative;
     text-align: center;
     width: 100vw;
-    padding: 50px 0;
+    padding: 50px;
     overflow: hidden;
+    height: 100vh;
 }
 
 .background-video {
@@ -523,37 +524,56 @@ h2{
     position: relative;
     z-index: 1; /* Ensure content stays above the video */
     color: white; /* Change text color for visibility */
+    /* height: 100vh; */
 }
 
+.content .our{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    padding-left: 60px;
+}
+.our{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    padding-left: 120px;
+
+}
 .section6 h2 {
-    color: #ffffff;
+    /* color: #ffffff;
+     */
+    color: #2d6a4f;
+
     font-size: 42px;
-    font-weight: bold;
+    font-weight: 600;
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    padding-left: 50px;
+    padding-left: 20px;
+    margin-top: -30px;
+    margin-left: -2px;
 }
 
 .section6 p {
-    margin-left: auto;
+    margin-left: 10px;
     margin-right: auto;
     line-height: 1.5;
-
     color: #ffffff;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
     text-align: justify;
-    margin-bottom: 20px;
-    width: 85%; /* Ensure the text takes up 60% of the width */
+    margin-bottom: 5px;
+    margin-top: -20px;
+    width: 90%; /* Ensure the text takes up 60% of the width */
 }
 
 .mentor-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2%;
-    height:670px;
+    gap: 1%;
+    height:550px;
 }
 
 .mentors {
@@ -564,7 +584,7 @@ h2{
     width: 22%;
     text-align: center;
     transition: transform 0.3s;
-    max-height:100%;
+    height:75vh;
 }
 
 .mentors:hover {
@@ -574,7 +594,7 @@ h2{
 .mentor-img img {
     width: 100%;
     height: 280px;
-    max-height: 280px;
+    /* max-height: 210px; */
     object-fit: cover;
 }
 
@@ -586,18 +606,19 @@ h2{
     text-align: center;
     max-height: 42%;
     min-height: 42%;
+    margin-top: -23px;
 }
 
 .mentor-txt h6 {
     color: #2d6a4f;
     font-size: 18px;
-    margin: 10px 0 5px;
+    padding: 15px 0px;
     font-weight: bold;
 }
 
 .mentor-txt p {
     color: #777;
-    font-size: 14px;
+    font-size: 11px;
     margin: 0;
 }
 
@@ -607,8 +628,8 @@ h2{
     text-align: center;
     align-items: center;
     text-decoration: none;
-    margin: 5px;
-    padding: 5px;
+    /* margin: 5px; */
+    /* padding: 15px; */
 }
 
 .mentor-social a {
@@ -616,8 +637,9 @@ h2{
     font-size: 20px;
     margin: 0 5px;
     transition: color 0.3s;
-    padding:5px;
+    padding:3px;
     border: #ccc solid 2px;
+    border-radius: 10px;
 }
 
 .mentor-social a:hover i {
@@ -667,6 +689,9 @@ h2{
     width:100vw;
     padding: 50px;
     background-color: #ffffff;
+    height: 1200px;
+    overflow: visible;
+    position: relative;
 }
 
 .section7 h2 {
@@ -674,24 +699,29 @@ h2{
     font-size: 42px;
     font-weight: bold;
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    padding-left: 50px;
+    padding-left: 20px;
+    margin-top: -30px;
+    margin-left: -2px;
 }
 
 .section7 p {
+    margin-left: 10px;
+    margin-right: auto;
     color: #434242;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
     text-align: justify;
-    margin-bottom: 20px;
-    width: 70%; /* Ensure the text takes up 60% of the width */
+    margin-bottom: 5px;
+    margin-top: -20px;
+    width: 90%; /* Ensure the text takes up 60% of the width */
     padding-left: 80px;
 
 }
 
 .photo-gallery {
-    padding:50px;
+    padding:10px;
     background-color: #ffffff;
 }
 
@@ -706,14 +736,14 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin:5px;
+    margin: 10px;
 
 }
 
 .hexagon {
     position: relative;
-    width: 320px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -746,6 +776,7 @@ h2{
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
+    height: 600px;
 }
 
 .section8 img {
@@ -801,29 +832,27 @@ h2{
     font-size: 42px;
     font-weight: bold;
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    padding-left: 50px;
+    padding-left: 20px;
+    margin-top: -30px;
+    margin-left: -2px;
+
 }
 
 .section9 p {
     color: #666666;
-    font-size: 18px;
-    margin-bottom: 40px;
+    font-size: 10px;
+    margin-bottom: 5px;
     line-height: 1.6;
-    max-width: 85%;
-    margin-left: auto;
+    width: 90%;
+    margin-left: 10px;
     margin-right: auto;
+    margin-top: -20px;
+    text-align: justify;
 }
 
-
-
-
-
-
-
-
-.section10 {
+/* .section10 { 
     width: 100vw;
     padding: 30px 80px;
     background-color: #f3f3f3;
@@ -918,7 +947,7 @@ h2{
 
 .submit-btn:hover {
     background-color: #52b788;
-}
+} 
 
 
 .footer {
@@ -946,13 +975,240 @@ h2{
 
 .footer-bottom a {
     color: #0077b5; /* LinkedIn Color */
-    text-decoration: none;
-    transition: color 0.3s;
+    /* text-decoration: none; */
+    /* transition: color 0.3s; 
 }
 
 .footer-bottom a:hover {
     color: #005582;
+} */
+
+/* contact us */
+
+
+.container{
+    width: 80%;
+    margin: auto;
 }
+.main{
+    display: grid;
+    grid-template-columns:50% 40%;
+    gap: 90px;
+    /* width: 60%; */
+
+}
+.contact-header h1{
+    color: green;
+    /* color: black; */
+}
+.bg{
+    background-color: rgb(213, 233, 231);
+}
+.contact-header h1{
+    padding-top:40px;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+.contact-form h3{
+    margin: 20px 0px;
+
+}
+.contact-header p{
+    text-align: justify;
+    line-height: 30px;
+}
+form .inputs input{
+    width: 500px;
+    height: 40px;
+    margin-bottom: 10px;
+    /* border-radius: 4px; */
+    outline: none;
+    border: none;
+    background-color: rgb(213, 233, 231);
+    border-bottom: 1px solid rgb(141, 55, 55);
+    padding-left: 4px;
+}
+textarea{
+    width: 500px;
+    height: 80px;
+    padding-left: 4px;
+    padding-top: 4px;
+    /* border-radius: 4px; */
+    /* border: none; */
+    border-bottom: 1px solid rgb(88, 41, 41);
+    outline: none;
+    border: o.4px solid rgb(88, 41, 41);
+    background-color: rgb(213, 233, 231);
+    margin-top: 12px;
+}
+.btn{
+   
+    display: block;
+    text-align: center;
+    width: 500px;
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: rgb(96, 188, 96);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    outline: none;
+    border: 0.4px solid rgb(96, 188, 96);
+}
+.right-top h3{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.right-top li{
+    padding-bottom: 30px;
+}
+.right-top p{
+    text-align: justify;
+}
+.map h3{
+    padding-top: 30px;
+}
+.map p{
+    padding-top: 30px;
+}
+/* .section-par{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 280px;
+} */
+
+/* }
+.container1{
+    padding: 0px 10%;
+} */
+
+/* 
+/* .section-par li{
+    text-align: justify;
+    padding-bottom: 20px;
+    line-height: 25px;
+}
+ */
+ .section-par{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    background-color: rgb(253, 251, 251);
+ }
+ .social h4{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align:center;
+    font-size: 19px;
+
+}
+.section-child h4{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 19px;
+}
+.social{
+    text-align: center;
+}
+.section-child{
+    text-align: center;
+}
+.section-par p{
+    line-height: 30px;
+    font-size: 20px;
+    color: rgb(83, 81, 81);
+}
+/* 
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 20px;
+    /* display: block; */
+.anchors a{
+    text-decoration: none;
+    /* color: rgb(58, 146, 159); */
+    font-size: 28px;
+    padding-left: 30px;
+}
+.anchors{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.linked{
+    color: blue;
+}
+/* .linked-in{
+    color: rgb(13, 13, 77);
+    
+} */
+.insta{
+    color: rgb(163, 42, 62);
+}
+.anchors, .inst-icon{
+    font-size: 28px;
+}
+.footer-parent{
+    /* background-color: rgb(44, 110, 85); */
+    background-color: rgb(65, 143, 113);
+
+    /* color:rgb(15, 1, 1); */
+    color: white; 
+    font-weight: 400;
+
+}
+.container-two{
+    width: 80%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer h4{
+    padding: 20px 0px;
+    font-size: 22px;
+    font-weight: 600;
+    /* color: rgb(88, 28, 179); */
+}
+.footer .paraa{
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+.sign-up input{
+    width: 220px;
+    height: 40px;
+    margin-top: 20px;
+    outline: none;
+    border: 0.4px solid white;
+    border-radius: 3px;
+    padding-right: 4px;
+
+}
+.butt{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    
+}
+.btt{
+    width: 440px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: rgb(96, 188, 96);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+    border: 0.4px solid rgb(96, 188, 96);
+}
+.check input{
+    width: 20px;
+    height: 18px;
+}
+
+
 
 /* 
 .section-team {
@@ -964,14 +1220,14 @@ h2{
     color: #2d6a4f;
     font-size: 42px;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    padding-left: 50px;
+    padding-left: 40px;
   }
   
   .section-team p {
     color: #434242;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 1.6;
     text-align: justify;
     margin-bottom: 20px;
@@ -1037,26 +1293,29 @@ h2{
     width:100vw;
     padding: 60px 20px;
     background-color: #f5f5f5;
+    height: 650px;
 }
 
 .section-team h2 {
     color: #2d6a4f;
     font-size: 42px;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     padding-left: 50px;
+    margin-top: -30px;
+    margin-left: -1px;
 }
-
 .section-team p {
     color: #434242;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
     text-align: justify;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     width: 90%; 
-    margin-left: auto;
+    margin-left: 20px;
     margin-right: auto;
+    margin-top: -20px;
 }
 
 .carousel-container {
@@ -1070,6 +1329,7 @@ h2{
     width: 100%; /* Set the width to control the visible area */
     overflow: hidden;
     position: relative;
+    height: 500px;
 }
 
 .team-cards {
@@ -1088,31 +1348,33 @@ h2{
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s;
-    height:620px;
+    height:750px;
     max-height: 620px;
 }
 
 .team-img img {
     width: 100%;
     height: 280px;
-    object-fit: cover;
-    min-height: 280px;
-    min-width: 100%;
+    /* object-fit: cover;
+    min-height: 200px;
+    min-width: 100%; */
 }
 
 .team-info {
-    padding: 15px;
+    padding-top: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: justify;
-    min-height: 400px;
+    text-align: center;
+    min-height: 42%;
+    max-height: 42%;
+    margin-top: -23px;
 }
 
 .team-info h6 {
     color: #2d6a4f;
     font-size: 18px;
-    margin: 10px 0 5px;
+    padding: 20px;
     font-weight: bold;
 }
 
@@ -1214,28 +1476,38 @@ h2{
 
 
 .section9 {
-    padding: 60px 20px;
+    padding: 50px;
+    position: relative;
+    text-align: center;
+    width: 100vw;
+    overflow:hidden;
     background-color: #e5e5e5;
+    height: 750px;
 }
 
 .section9 h2 {
     color: #2d6a4f;
     font-size: 42px;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    padding-left: 50px;
+    padding-left: 20px;
+    margin-top: -30px;
+    margin-left: -2px;
 }
-
+.pp{
+    padding-left: 100px;
+}
 .section9 p {
     color: #434242;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
     text-align: justify;
     margin-bottom: 20px;
     width: 90%; 
-    margin-left: auto;
+    margin-left: 10px;
     margin-right: auto;
+    margin-top: -20px;
 }
 
 .volunteer-cards {
@@ -1243,6 +1515,7 @@ h2{
     flex-wrap: wrap;
     justify-content: center;
     gap: 2%;
+    height: 530px;
 }
 
 .volunteer-member {
@@ -1250,18 +1523,18 @@ h2{
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 22%;
+    width: 30%;
     text-align: center;
     transition: transform 0.3s;
-    max-height:590px;
+    height: 600px;
 }
 
 .volunteer-img img {
     width: 100%;
-    height: 280px;
-    object-fit: cover;
-    min-height: 280px;
-    min-width: 100%;
+    height: 350px;
+    object-fit: fill;
+    /* min-height: 280px;
+    min-width: 100%; */
 }
 
 .volunteer-info {
@@ -1275,8 +1548,8 @@ h2{
 
 .volunteer-info h6 {
     color: #2d6a4f;
-    font-size: 18px;
-    margin: 10px 0 5px;
+    font-size: 20px;
+    padding: 20px 0px;
     font-weight: bold;
 }
 
@@ -1393,13 +1666,13 @@ h2{
     }
 
     .section9 h2 {
-        font-size: 36px; /* Smaller heading on mobile */
+        font-size: 42px; /* Smaller heading on mobile */
         padding-left: 20px; /* Reduced padding */
     }
 
     .section9 p {
         font-size: 16px; /* Slightly smaller text */
-        width: 95%; /* Use more width for text */
+        width: 90%; /* Use more width for text */
     }
 }
 
@@ -1465,15 +1738,15 @@ h2{
 /* Media Queries for additional responsiveness */
 @media (max-width: 768px) {
     .section5 h2 {
-        font-size: 2.5rem; /* Smaller heading size for smaller screens */
+        font-size: 2.0rem; /* Smaller heading size for smaller screens */
     }
 
     .section5 p {
-        font-size: 0.9rem; /* Adjust paragraph font size */
+        font-size: 0.8rem; /* Adjust paragraph font size */
     }
 
     .unique-rect-card, .unique-square-card {
-        height: auto; /* Allow height to adjust */
+        height: 200px; /* Allow height to adjust */
     }
 
     .mentor-cards {
@@ -1648,3 +1921,37 @@ h2{
         font-size: 18px; /* Smaller size for social icons */
     }
 }
+
+
+
+
+
+
+
+ 
+
+
+
+   
+
+
+
+
+  
+
+    
+
+
+   
+
+
+
+
+
+
+    
+
+   
+
+ 
+    
