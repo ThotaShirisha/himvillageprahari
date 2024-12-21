@@ -28,10 +28,20 @@ header {
   position: relative;
   width: 100vw; 
   height:100vh; 
-  background: url('../G1.JPG') no-repeat center center/cover;
 }
 
 
+#top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../img/village-cleaning-img.jpg') no-repeat center center/cover;
+  filter: brightness(0.7); 
+  z-index: -1; 
+}
 
 .logo {
   display: flex;
@@ -126,8 +136,8 @@ nav {
 
 .main-body h1 {
   position: absolute;
-  top:40%;
-  left:20%;
+  top:45%;
+  left:9%;
   color: #ffffff; /* Kept text color white */
   font-size: 65px;
   text-decoration: none;
@@ -138,16 +148,14 @@ nav {
 
 .main-body-p {
   position: absolute;
-  top:53%;
-  left:29%;
-  /* color: #00412e;  */
-  color: #fff;
+  top:59%;
+  left:10%;
+  color: #00412e;
   font-size: 25px;
   text-decoration: none;
   font-weight: bold;
   background-color: rgba(255, 255, 255, 0.5); /* Transparent background to ensure readability */
-  padding:15px 10px;
-  border-radius: 20px;
+  padding:10px 10px;
 }
 
 .main-body-des {
@@ -165,7 +173,7 @@ nav {
   position: absolute;
   top:79%;
   left:11%;
-  color: #cdcdcd; /* Kept button text color light gray */
+  color: #cdcdcd; 
   font-size: 20px;
   text-decoration: none;
   background-color: #7c7c7c;
@@ -183,66 +191,45 @@ nav {
 
 
 
-
-/* hero section styling */
-
-
-
-
-
-
 /* about sections */
 
-.about {
-    width: 100%;
-    padding: 50px 20px;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
 .about-card {
-    width: 90%;
-    max-width: 1000px;
-    background-color: rgba(147, 253, 244, 0.11);
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    margin: 100px auto;
-    padding: 50px;
-}
-
-.about-card .about-content {
-    padding: 30px;
-}
-
-
-.about-card h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.about-card p {
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.6;
-    
+  height: 500px;
+  width: 100%;
+  background-color: rgba(147, 253, 244, 0.11);
+  overflow: hidden;
+  display: flex; 
+  flex-direction: row-reverse; 
+  margin: 100px auto;
+  padding: 0;
 }
 
 .about-card .about-image {
-    width: 100%;
-    height: 350px;
-    background: url('../img/village-cleaning-img.jpg') no-repeat center center/cover;
-    border-radius: 20px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  width: 50%; 
+  height: auto;
+  background: url('../img/village-cleaning-img.jpg') no-repeat center center/cover;
 }
+
+.about-card .about-content {
+  width: 50%; 
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-card h2 {
+  font-size: 2rem;
+  color: #00412e;
+  margin-bottom: 15px;
+}
+
+.about-card p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+}
+
 
 
 

@@ -1,6 +1,14 @@
 // hero section slider
 
 
+const images = [
+  "../img/village-cleaning-img.jpg",
+  "../vasisth.jpeg",
+  "../Gallery/g12.jpg",
+  "../Gallery/g3.jpg",
+  "../Gallery/g14.jpg"
+];
+
 
 
 
