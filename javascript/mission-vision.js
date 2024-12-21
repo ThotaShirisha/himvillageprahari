@@ -1,83 +1,38 @@
-// hero section slider
 
 
-const images = [
-  "../img/village-cleaning-img.jpg",
-  "../vasisth.jpeg",
-  "../Gallery/g12.jpg",
-  "../Gallery/g3.jpg",
-  "../Gallery/g14.jpg"
-];
+let index = 0;
+const slides = document.querySelectorAll('.slider .slide'); 
+const totalSlides = slides.length; 
 
+function updateSlider() {
 
+  slides.forEach(slide => {
+    slide.style.display = 'none';
+  });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-let currentIndex = 0;
-
-const slides = document.querySelectorAll('.slide');
-const totalSlides = slides.length;
-
-const prevButton = document.querySelector('.prev');
-const nextButton = document.querySelector('.next');
-
-function showSlide(index) {
-  if (index >= totalSlides) currentIndex = 0;
-  if (index < 0) currentIndex = totalSlides - 1;
-
-  const offset = -currentIndex * 100;
-  document.querySelector('.slider').style.transform = `translateX(${offset}%)`;
+  slides[index].style.display = 'block';
 }
 
-prevButton.addEventListener('click', () => {
-  currentIndex--;
-  showSlide(currentIndex);
-});
+function nextSlide() {
+  index = (index + 1) % totalSlides; 
+  updateSlider();
+}
 
-nextButton.addEventListener('click', () => {
-  currentIndex++;
-  showSlide(currentIndex);
-
-
-  clearInterval(autoSlide);
-  autoSlide = setInterval(() => {
-    currentIndex++;
-    showSlide(currentIndex);
-  }, 5000);
-});
+function prevSlide() {
+  index = (index - 1 + totalSlides) % totalSlides;
+  updateSlider();
+}
 
 
-let autoSlide = setInterval(() => {
-  currentIndex++;
-  showSlide(currentIndex);
-}, 5000);
+document.querySelector('.next').addEventListener('click', nextSlide);
+document.querySelector('.prev').addEventListener('click', prevSlide);
 
-showSlide(currentIndex);
+
+setInterval(nextSlide, 2000);
+
+
+updateSlider();
+
+
+
+
