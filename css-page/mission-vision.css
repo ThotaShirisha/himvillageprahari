@@ -493,7 +493,7 @@ nav {
 
   .core-values {
     padding: 3rem 2rem;
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
     text-align: center;
     box-sizing: border-box;
   }
@@ -520,7 +520,7 @@ nav {
   
   
   .cards {
-    background: #ffffff;
+    background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
     height: 170px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
@@ -543,7 +543,7 @@ nav {
     font-size: 1.75rem;
     font-weight: bold;
     margin-bottom: 0.75rem;
-    color: #092c04;
+    color: #164110;
   }
   
   /* Card Text */
@@ -604,7 +604,7 @@ nav {
 
 
   .cta-section {
-    background: #eaf6f6; 
+    background-color: #e0f2fa;
     padding: 60px 20px;
     text-align: center;
   }
