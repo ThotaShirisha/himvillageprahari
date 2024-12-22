@@ -138,7 +138,7 @@ nav {
   position: absolute;
   top:45%;
   left:9%;
-  color: #ffffff; /* Kept text color white */
+  color: #ffffff; 
   font-size: 65px;
   text-decoration: none;
   font-weight: bold;
@@ -154,7 +154,7 @@ nav {
   font-size: 25px;
   text-decoration: none;
   font-weight: bold;
-  background-color: rgba(255, 255, 255, 0.5); /* Transparent background to ensure readability */
+  background-color: rgba(255, 255, 255, 0.5); 
   padding:10px 10px;
 }
 
@@ -162,7 +162,7 @@ nav {
   position: absolute;
   top:61%;
   left:11%;
-  color: #dfdfdf; /* Kept text color light gray */
+  color: #dfdfdf; 
   font-size: 20px;
   text-decoration: none;
   width:50%;
@@ -187,51 +187,159 @@ nav {
   background-color: #363636;
 }
 
+@media (max-width: 1024px) {
+  .main-body h1 {
+    font-size: 5vw;
+    top: 40%;
+    left: 8%;
+  }
+
+  .main-body-p {
+    font-size: 2vw;
+    top: 53%;
+    left: 8%;
+  }
+
+  .main-body-des {
+    font-size: 1.5vw;
+    width: 70%;
+    left: 8%;
+  }
+
+  .main-body-btn {
+    font-size: 1.5vw;
+    top: 75%;
+    left: 8%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-body h1 {
+    font-size: 6vw;
+    top: 38%;
+    left: 5%;
+  }
+
+  .main-body-p {
+    font-size: 2.5vw;
+    top: 47%;
+    left: 5%;
+  }
+
+  .main-body-des {
+    font-size: 2vw;
+    width: 80%;
+    left: 5%;
+  }
+
+  .main-body-btn {
+    font-size: 2vw;
+    top: 73%;
+    left: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-body h1 {
+    font-size: 7vw;
+    top: 35%;
+    left: 5%;
+  }
+
+  .main-body-p {
+    font-size: 3vw;
+    top: 41%;
+    left: 5%;
+    padding: 8px 10px;
+  }
+
+  .main-body-des {
+    font-size: 2.5vw;
+    width: 90%;
+    left: 5%;
+  }
+
+  .main-body-btn {
+    font-size: 2.5vw;
+    top: 70%;
+    left: 5%;
+    padding: 8px 15px;
+  }
+}
+
 
 
 
 
 /* about sections */
 
-.about{
-  width: 100%;
+.about {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
 }
 
 .about-card {
-  height: 500px;
-  width: 100%;
-  background-color: #e0f2fa;
-  overflow: hidden;
-  display: flex; 
-  flex-direction: row-reverse; 
-  margin: 100px auto;
-  padding: 0;
-}
-
-.about-card .about-image {
-  width: 50%; 
-  height: auto;
-  background: url('../img/village-cleaning-img.jpg') no-repeat center center/cover;
-}
-
-.about-card .about-content {
-  width: 50%; 
-  padding: 30px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 1350px;
+  height: fit-content;
+  margin: 20px;
 }
 
-.about-card h2 {
-  font-size: 2rem;
-  color: #00412e;
+.about-image {
+  flex: 1 1 40%; 
+  background-image: url('../img/forest-cleaning.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 250px; 
+}
+
+.about-content {
+  flex: 1 1 50%; 
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.about-content h2 {
+  font-size: 1.8em;
   margin-bottom: 15px;
+  color: #00412e;
 }
 
-.about-card p {
-  font-size: 1.2rem;
-  color: #555;
+.about-content p {
+  font-size: 1em;
   line-height: 1.6;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .about-card {
+      flex-direction: column; 
+  }
+
+  .about-image, .about-content {
+      flex: 1 1 100%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content h2 {
+      font-size: 1.5em;
+  }
+
+  .about-content p {
+      font-size: 0.9em; 
+  }
 }
 
 
@@ -248,7 +356,8 @@ nav {
 }
 
 .mission-section h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  color: #00412e;
   margin-bottom: 50px;
   text-align: left;
    padding-left: 22px;
@@ -320,17 +429,17 @@ nav {
     gap: 15px;
   }
 
-  .card {
-    width: 280px;  /* Slightly smaller card width for tablets */
+  .cards {
+    width: 280px;  
     padding: 25px;
   }
 
   .mission-section h2 {
-    font-size: 2rem;  /* Adjust heading size for tablets */
+    font-size: 2rem;  
   }
 
   .mission-section p {
-    font-size: 1.1rem;  /* Adjust paragraph size for tablets */
+    font-size: 1.1rem; 
   }
 }
 
@@ -340,17 +449,17 @@ nav {
     align-items: center;
   }
 
-  .card {
-    width: 90%;  /* Use percentage width to make cards responsive on mobile */
+  .cards {
+    width: 90%;  
     padding: 20px;
   }
 
   .mission-section h2 {
-    font-size: 1.8rem;  /* Adjust heading size for mobile */
+    font-size: 1.8rem;  
   }
 
   .mission-section p {
-    font-size: 1rem;  /* Adjust paragraph size for mobile */
+    font-size: 1rem; 
   }
 }
 
@@ -372,9 +481,9 @@ nav {
 }
 
 .vision-section h2 {
-  font-size: 2.5rem;
   margin-bottom: 30px;
-  color: #15350f;
+  font-size: 2rem;
+  color: #00412e;
   text-align: left;
   padding-left: 24px;
 }
@@ -386,10 +495,10 @@ nav {
 
 .slider-container {
   position: relative;
-  max-width: 95%;  /* Set slider width to 90% */
+  max-width: 95%;  
   margin: 0 auto;
   overflow: hidden;
-  height: 300px;  /* Adjusted height for the images */
+  height: 300px; 
 }
 
 .slider {
@@ -397,6 +506,28 @@ nav {
   transition: transform 0.5s ease-in-out;
   height: 100%;
 }
+
+#slide1{
+ background-color: #AEE2FF;
+}
+
+#slide2{
+  background-color: #D4EDDA;
+ }
+
+ #slide3{
+  background-color: #FDF3E6;
+ }
+
+ #slide4{
+  background-color: #E6E6FA;
+ }
+
+ #slide5{
+  background-color: #F5F5F5;
+ }
+
+
 
 .slide {
   min-width: 100%;
@@ -490,7 +621,6 @@ nav {
 
   /* core values */
 
-
   .core-values {
     padding: 3rem 2rem;
     background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
@@ -499,10 +629,10 @@ nav {
   }
   
   .core-values-heading {
-    font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 2rem;
-    color: #333;
+    font-size: 2rem;
+    color: #00412e;
     text-transform: uppercase;
     text-align: left;
     padding-left: 34px;
@@ -607,6 +737,10 @@ nav {
     background-color: #e0f2fa;
     padding: 60px 20px;
     text-align: center;
+    background: url(../Gallery/g12.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   #cta-card {
@@ -616,11 +750,6 @@ nav {
     margin: 0 auto;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background: url(../G1.JPG);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: brightness(0.8);
     z-index: 0; 
     position: relative; 
   }
@@ -632,7 +761,7 @@ nav {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Darker overlay for better text visibility */
+    background: rgba(0, 0, 0, 0.6); 
     border-radius: 15px;
     z-index: -1;
   }
@@ -653,7 +782,6 @@ nav {
     font-family: 'Arial', sans-serif;
     background-color: rgba(0, 0, 0, 0.5); /* Darker background for the text */
     padding: 15px; /* Increased padding for better readability */
-    border-radius: 20px;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); /* Added text shadow */
   }
   
@@ -661,10 +789,9 @@ nav {
   #cta-button {
     background-color: #27ae60; 
     color: white;
-    padding: 18px 40px;
+    padding: 14px 40px;
     font-size: 1.2rem;
     border: none;
-    border-radius: 8px;
     cursor: pointer;
     text-transform: uppercase; 
     font-weight: bold;
