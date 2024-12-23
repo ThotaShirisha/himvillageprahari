@@ -10,8 +10,6 @@ body {
     color: #333;
     font-family: 'Oxygen', sans-serif;
 }
-
-
 html {
     overflow-x:hidden; /* Prevent horizontal scrolling */
 }
@@ -178,15 +176,6 @@ nav {
 .main-body-btn:hover{
     background-color: #363636;
 }
-
-
-
-
-
-
-
-
-
 
 .section2{
     width:100vw;
@@ -932,8 +921,6 @@ h2{
 }
 
 
-
-
 .footer {
     background-color: #000000;
     color: #ffffff;
@@ -966,7 +953,6 @@ h2{
 .footer-bottom a:hover {
     color: #005582;
 }
-
 
 /* 
 .section-team {
