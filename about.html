@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -64,6 +63,7 @@
     <div class="about-us">
       <div class="about-us-heading">About Us</div>
       <div class="about-us-text">
+        <input type="checkbox" id="check">
       <p>The Him Village EPrahari Foundation is a non-governmental organization dedicated to addressing the pressing environmental challenges faced by the Himalayan regions. Rooted in the core principles of sustainability, conservation, and community engagement, the foundation is committed to promoting zero waste and effective waste management practices to protect and preserve the fragile Himalayan ecosystem.</p> 
         The name of the organization encapsulates its mission and purpose: 
         <ul>
@@ -83,24 +83,16 @@
         <p>Him Village EPrahari Foundation also recognizes the role of responsible tourism in protecting the Himalayas. It actively engages with stakeholders in the tourism industry to promote eco-tourism practices that minimize environmental impact while supporting local livelihoods. The foundation envisions the Himalayan region as a global model for sustainable tourism, where visitors contribute to conservation efforts rather than exacerbating environmental problems.</p>  
         
         <p>With a vision to create self-reliant, environmentally aware communities, the foundation strives to leave a lasting impact. It believes that the protection of the Himalayas is not just a regional concern but a global responsibility, as these mountains are vital for maintaining ecological balance. Him Village EPrahari Foundation stands as a beacon of hope, working tirelessly to guard the environment and inspire positive change for future generations.</p></span>
-        <span class="read-more-btn">Read more...</span>
+       
+        <label for="check">Read More</label>
         </div>
-      
+
     </div>
     
     
     <div class="mission">
       <div class="mission-heading">
         Our Mission</div>
-      <!-- <div class="mission-text"><p>
-                <ul>
-                     <li>Promote sustainable living and eco-friendly practices in rural areas.</li>
-                    <li>Provide education and awareness about environmental conservation.</li>
-                    <li>Support rural communities in achieving self-reliance through skill development and
-                    innovation.</li>
-                    <li>Advocate for the preservation of local biodiversity and natural resources.</li> 
-                </ul> 
-            </h3> -->
       <div class="mission-cards">
 
         <div class="mission-card1" style="width: 18rem;">
@@ -131,10 +123,7 @@
             <p class="card-text">Advocate for the preservation of local biodiversity and natural resources.</p>
           </div>
         </div>
-        <!-- <div class="card1">hii</div>
-                <div class="card2">hii</div>
-                <div class="card3">hii</div>
-                <div class="card4">hii</div> -->
+       
       </div>
     </div>
 
@@ -232,17 +221,7 @@
         </div>
 
       </div>
-      <!-- <p>
-                <ul>
-                <li>o Eco-Conservation Projects: Tree plantations, waste management drives, and water
-                conservation campaigns.</li>
-                <li>o Skill Development Programs: Training locals in sustainable practices and providing
-                vocational education.</li>
-                <li>o Community Empowerment: Supporting women, children, and marginalized groups
-                through tailored initiatives.</li>
-                <li>o Awareness Campaigns: Organizing workshops, essay competitions, and educational
-                sessions about environmental issues</li></ul>
-            </h3> -->
+      
     </div>
 
     <div class="why-choose-us">
@@ -287,14 +266,7 @@
           <h5>children about sustainability and eco-friendly practices.</h5>
         </div>
       </div>
-      <!-- <p>
-                <ul>
-                <li>o Planted [Number] trees across rural areas.</li>
-                <li>o Empowered [Number] families through skill development programs.</li>
-                <li>o Reduced plastic waste by [Percentage] in partnered villages.</li>
-                <li>o Educated [Number] children about sustainability and eco-friendly practices.</li>
-                </ul>
-            </h3> -->
+    
     </div>
 
     <section class="section-team">
@@ -435,9 +407,7 @@
           </div>
         </div>
       </div>
-      <!-- <p>Working with Him Village E-Prahari has been a life-changing experience. The initiatives
-                are impactful and truly inspire hope for a better future." – [Testimonial from a
-                Volunteer/Beneficiary]</p> -->
+  
     </div>
 
  
@@ -609,22 +579,6 @@
       }
     }, 1)
   </script>
-
-<script>
-  const parentContainer = document.querySelector('.about-us-text')
-  parentContainer.addEventListener('click' ,event=>{
-    const current = event.target;
-    const isReadMoreBtn = current.className.includes('read-more-btn')
-    if(!isReadMoreBtn)return;
-
-    const currentText = event.target.parentNode.querySelector('.read-more-text')
-
-    currentText.classList.toggle('read-more-text--show');
-
-    current.textContent = current.textContent.includes('Read More') ? 
-    "Read More..." : "Read Less...";
-  })
-</script>
 
   <!--team script-->
 
