@@ -228,7 +228,7 @@ color: rgb(13, 114, 13);
 }
 
 .introduction{
-    /* background-image:url("about.jpeg"); */
+    background-image:url("about.jpeg");
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center center;
@@ -344,8 +344,9 @@ color: rgb(13, 114, 13);
 
 @media screen and (max-width: 768px){
     .introduction-text h2{
-        text-align: center;
-        margin-left:7%;
+        text-align:center;
+         
+        margin-left:17%;
         margin-top:5%;
         
         width:60%;
@@ -377,6 +378,14 @@ color: rgb(13, 114, 13);
     margin-left: 50px;
 }
 
+@media screen and (max-width: 768px){
+    .about-us-heading{
+        text-align: center;
+    }
+}
+
+
+
 .about-us-text{
     margin-top:5px;
     padding-top:10px;
@@ -399,19 +408,37 @@ color: rgb(13, 114, 13);
     font-weight: bold;
 }
 
-.read-more-btn{
-    color: #2d6a4f;
-    font-weight:bold;
-    cursor: pointer;
-}
-
-.read-more-text{
+#check{
     display: none;
 }
 
-.read-more-text--show{
-   display: inline;
+label{
+    display: inline-block;
+    cursor: pointer;
+    font-weight:bold;
+    color: #2d6a4f;
 }
+
+#check:checked ~ .read-more-text{
+    display: block;
+}
+
+#check:checked ~ label{
+    visibility: hidden;
+}
+
+#check:checked ~ label:after{
+    content:'Show Less';
+    display: block;
+    visibility:visible;
+}
+
+
+.read-more-text{
+    display: none;
+    transition: 0.5s linear;
+}
+
 /*vision styling*/
 
 
@@ -2014,7 +2041,7 @@ footer .underline span{
     margin: auto;
     position: relative; /* Required for z-index to work */
     z-index: 1;
-    background-image: url("/footer/donation.jpg");
+    background-image: url("donation.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
