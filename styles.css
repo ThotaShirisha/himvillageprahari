@@ -583,11 +583,38 @@ h2{
    
     .section5 h2 {
        margin-bottom: 0px;
+    }  
+   
+
+    .cardtxt-sq{
+        font-size: 18px;
+        padding: 10px;
     }
-    
-    .section5 p {
-        margin: 10px 0px;
+
+    .cardtxt-rec{
+        font-size: 18px;
+        padding: 15px 0px;
+    }
+
+    #service-pr{
         margin-right: 140px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+
+    .cardtxt-rec h3, .cardtxt-sq h3{
+        color: #00412e;
+        font-size: 17px;
+        padding: 2px;
+    }
+
+    .unique-section {
+        width: 100vw;
+        padding: 60px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     
  
