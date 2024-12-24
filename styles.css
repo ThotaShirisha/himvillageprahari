@@ -301,6 +301,11 @@ h2{
 
     .txt-card1 {
         font-size:41px;
+        width: 55%;
+    }
+
+    .txt-card1 p {
+        padding: 0px 10px;
     }
 
 
