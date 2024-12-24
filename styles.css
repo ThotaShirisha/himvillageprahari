@@ -177,6 +177,41 @@ nav {
     background-color: #363636;
 }
 
+
+
+
+@media (max-width: 1075px) {
+    
+    .main-body h1 {
+        font-size: 62px;
+        top:39%;
+        left:10%;
+    }
+    .main-body-p{
+        margin: 7px 0px;
+        font-size: 21px;
+    }
+
+    .main-body-des{
+        font-size: 19px;
+        padding: 8px 0px;
+    }
+
+    .main-body-btn{
+        top:91%;
+        left:11%;
+        margin-bottom: 10px;
+    }
+
+
+}
+
+
+
+
+
+
+
 .section2{
     width:100vw;
     height:auto;
@@ -259,6 +294,27 @@ h2{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     margin:10px;
 }
+
+
+
+@media (max-width: 1075px) {
+
+    .txt-card1 {
+        font-size:41px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
 .section3 {
     width: 100vw;
     padding: 50px 0;
@@ -1286,11 +1342,43 @@ h2{
     margin: 0;
 }
 
-@media (max-width: 768px) {
+
+
+
+
+
+@media (max-width: 1200px) {
+
+    .section7 h2 {
+        font-size: 36px;
+        padding-left: 30px;
+    }
+
+    .section7 p {
+        width: 80%;
+        padding-left: 30px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hexagon {
+        width: 250px;
+        height: 200px;
+    }
+
     .volunteer-member {
-        width: 90%;
+        width: 30%; 
     }
 }
+
+
+
+
+
+
+
 
 
 
@@ -1339,7 +1427,12 @@ h2{
         font-size: 16px; /* Smaller button text */
         padding: 8px 16px; /* Adjust padding */
     }
+
+    .volunteer-member {
+        width: 90%;
+    }
 }
+
 
 @media (max-width: 480px) {
     .nav-links {
@@ -1380,12 +1473,7 @@ h2{
     }
 }
 
-/* Responsive Styles */
-@media (max-width: 1200px) {
-    .volunteer-member {
-        width: 30%; /* 3 cards in a row */
-    }
-}
+
 
 @media (max-width: 768px) {
     .volunteer-member {
@@ -1510,27 +1598,7 @@ h2{
 }
 
 
-/* Media Queries for Responsiveness */
-@media (max-width: 1200px) {
-    .section7 h2 {
-        font-size: 36px;
-        padding-left: 30px;
-    }
 
-    .section7 p {
-        width: 80%;
-        padding-left: 30px;
-    }
-
-    .gallery {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .hexagon {
-        width: 250px;
-        height: 200px;
-    }
-}
 
 @media (max-width: 768px) {
     .section7 h2 {
@@ -1604,7 +1672,7 @@ h2{
 }
 
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
     .section10 {
         padding: 30px 20px; /* Reduce padding on smaller screens */
