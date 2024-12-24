@@ -623,10 +623,6 @@ h2{
 
 
 
-
-
-
-
 .section6 {
     position: relative;
     text-align: center;
@@ -665,7 +661,6 @@ h2{
     margin-left: auto;
     margin-right: auto;
     line-height: 1.5;
-
     color: #ffffff;
     font-size: 18px;
     line-height: 1.6;
@@ -691,6 +686,7 @@ h2{
     text-align: center;
     transition: transform 0.3s;
     max-height:100%;
+    position: relative;
 }
 
 .mentors:hover {
@@ -733,8 +729,11 @@ h2{
     text-align: center;
     align-items: center;
     text-decoration: none;
-    margin: 5px;
+    margin: 5px auto;
     padding: 5px;
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
 }
 
 .mentor-social a {
@@ -744,6 +743,7 @@ h2{
     transition: color 0.3s;
     padding:5px;
     border: #ccc solid 2px;
+    border-radius: 10px;
 }
 
 .mentor-social a:hover i {
@@ -788,6 +788,49 @@ h2{
     transition: color 0.3s;
     gap: 10px;
 }
+
+
+@media (max-width: 1075px) {
+
+    .mentor-img img {
+        height: 250px;
+    }
+
+    .mentor-txt {
+        padding: 10px;
+        max-height: 40%;
+        min-height: 40%;
+    }
+    
+    .mentor-txt h6 {
+        font-size: 18px;
+        margin: 5px 0 5px;
+        font-weight: bold;
+    }
+    
+    .mentor-txt p {
+        margin: 0;
+    }
+
+    .mentor-social {
+        bottom: 2px;
+        left: 5px;
+    }
+
+    .mentor-social a {
+        font-size: 20px;
+        margin: 0 5px;
+        transition: color 0.3s;
+        padding:2px;
+        border-radius: 10px;
+    }
+}
+
+
+
+
+
+
 
 .section7{
     width:100vw;
