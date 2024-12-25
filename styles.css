@@ -1023,7 +1023,16 @@ h2{
 
 
 
+@media (max-width: 1075px) {
+  
+   #our-valun-heading{
+    margin-bottom: 20px;
+   }
 
+    #our-valun-pr{
+        margin-right: 90px;
+    }
+}
 
 
 
@@ -1124,6 +1133,37 @@ h2{
 .submit-btn:hover {
     background-color: #52b788;
 }
+
+
+
+@media (max-width: 1075px) {
+
+    #contact-us-para{
+        padding: 0px;
+    }
+
+    .section10 p {
+        margin: 0px;
+        margin-bottom: 35px;
+    }
+
+    .form-group-half {
+        width: 49.5%;
+    }
+
+    #message{
+        margin-top: 4px;
+    }
+
+   
+
+}
+
+
+
+
+
+
 
 
 .footer {
