@@ -217,37 +217,34 @@ nav {
 @media (max-width: 480px) {
     
     .main-body h1 {
-        font-size: 35px;
+        font-size: 38px;
         top:20%;
         left:8%;
     }
  
     .main-body-p{
         position: absolute;
-        font-size: 17px;
+        font-size: 18px;
         top:28%;
         left:11%;
         padding:7px 5px;
     }
 
     .main-body-des{
-        top:34%;
+        top:35%;
         left:11%;
-        width:60%;
+        width:50%;
         font-size: 15px;
     }
 
     .main-body-btn{
-        top:67%;
+        top:78%;
         left:11%;
         padding:5px 10px;
-        font-size: 15px;
+        font-size: 17px;
     }
 
-
 }
-
-
 
 
 
@@ -352,7 +349,7 @@ h2{
 }
 
 
-@media (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
  
     .txt-card1 {
         font-size:41px;
@@ -365,6 +362,67 @@ h2{
     }
 
 }
+
+
+
+
+@media (max-width: 480px) {
+    .section2 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .cards {
+        flex-direction: column; 
+        height: auto; 
+    }
+
+    .card1, .card2 {
+        flex-direction: row; 
+        width: 100%; 
+        margin: 10px 0; 
+        height: auto; 
+    }
+
+    .card1-img, .txt-card1 {
+        width: 50%; 
+        height: auto; 
+    }
+
+    .card1 img, .card2 img {
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover; 
+    }
+
+    .txt-card1 {
+        padding: 10px;
+        font-size: 16px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .txt-card1 h6 {
+        font-size: 18px;
+        margin-bottom: 10px; 
+    }
+
+    .txt-card1 p {
+        font-size: 14px; 
+        text-align: justify; 
+        margin: 10px 0; 
+    }
+
+    .card-btn {
+        font-size: 14px;
+        padding: 8px 12px;
+        margin: 1px auto;
+        margin-top: 10px;
+        align-self: flex-start;
+    }
+}
+
 
 
 
@@ -479,9 +537,6 @@ h2{
 }
 
 
-@media (max-width: 768px) {
-
-}
 
 
 
@@ -632,6 +687,7 @@ h2{
 }
 
 
+
 @media (max-width: 1075px) {
    
     .section5 h2 {
@@ -670,8 +726,72 @@ h2{
         justify-content: center;
     }
     
- 
 }
+
+
+
+@media (max-width: 480px) {
+    .section5 {
+        padding: 20px; 
+    }
+
+    .section5 h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        text-align: left; 
+    }
+
+    .section5 p {
+        font-size: 16px;
+        width: 90%;
+        padding-left: 29px;
+    }
+
+    .unique-section {
+        padding: 20px; 
+    }
+
+    .unique-card-container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .unique-rect-card,
+    .unique-square-cards {
+        width: 90%;
+        margin: 10px 0; 
+    }
+
+    .unique-rect-card {
+        height: 200px; 
+    }
+
+    .unique-square-cards {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        height: auto; 
+    }
+
+    .unique-square-card {
+        width: 45%; 
+        height: 150px;
+        margin: 5px; 
+    }
+
+    .cardtxt-rec, .cardtxt-sq {
+        font-size: 14px; 
+        padding: 8px; 
+    }
+
+    .cardtxt-rec h3, .cardtxt-sq h3 {
+        font-size: 16px; 
+    }
+
+    .cardtxt-rec p, .cardtxt-sq p {
+        font-size: 12px; 
+    }
+}
+
 
 
 
@@ -693,6 +813,7 @@ h2{
     object-fit: cover;
     z-index: -1; /* Ensure the video stays behind the content */
 }
+
 
 .content {
     position: relative;
@@ -879,8 +1000,6 @@ h2{
     }
 }
  
-
-
 
 
 .section7{
@@ -2000,8 +2119,8 @@ h2{
         justify-content: center;
     }
 
-  
 }
+
 
 @media (max-width: 480px) {
     .stat h2 {
@@ -2130,7 +2249,8 @@ h2{
 
 
 
-@media (max-width: 768px) {
+@media  (max-width: 768px) {
+
     .section6 h2 {
         font-size: 32px;
         padding-left: 30px;
@@ -2148,17 +2268,17 @@ h2{
     .mentor-cards {
         flex-wrap: wrap;
         gap: 10px;
-        height: auto; /* Adjust height for better layout */
+        height: auto; 
     }
 
     .mentors {
-        width: 45%; /* Reduce width to fit two cards per row */
+        width: 45%; 
         margin-bottom: 20px;
         height: 41rem;
     }
 
     .mentor-img img {
-        height: 620px; /* Reduce image height for smaller screens */
+        height: 620px; 
     }
 
     .mentor-txt {
@@ -2174,4 +2294,43 @@ h2{
     .mentor-social a{
         margin: 0px 10px;
     }
+}
+
+@media (max-width: 480px) {
+
+    
+    .section6 h2 {
+        font-size: 32px;
+        padding-left: 16px;
+    }
+
+    .section6 p {
+        font-size: 16px;
+        width: 90%;
+        margin-bottom: 15px;
+        text-align: start;
+    }
+
+
+    .mentors {
+        width: 80%; 
+        height: 42rem;
+    }
+
+    .mentor-txt {
+        padding: 10px;
+        max-height: 400px;
+    }
+
+    .mentor-social a{
+        margin: 0px 15px;
+    }
+
+    .mentor-img img {
+        width: 100%;
+        height: 320px;
+        max-height: 380px;
+        object-fit: cover;
+    }
+
 }
