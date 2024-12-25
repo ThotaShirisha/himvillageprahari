@@ -179,7 +179,6 @@ nav {
 
 
 
-
 @media (max-width: 1075px) {
     
     .main-body h1 {
@@ -203,6 +202,12 @@ nav {
         margin-bottom: 10px;
     }
 
+}
+
+
+
+@media (max-width: 768px) {
+ 
 
 }
 
@@ -308,7 +313,20 @@ h2{
         padding: 0px 10px;
     }
 
+}
 
+
+@media (max-width: 768px) {
+ 
+    .txt-card1 {
+        font-size:41px;
+        width: 55%;
+    }
+
+    .txt-card1 p {
+        font-size:medium;
+        width:200px;
+    }
 
 }
 
@@ -387,8 +405,6 @@ h2{
 
 
 
-
-
 .section4 {
     width: 100vw;
     height: 200px;
@@ -427,7 +443,9 @@ h2{
 }
 
 
+@media (max-width: 768px) {
 
+}
 
 
 
@@ -576,7 +594,6 @@ h2{
     max-width: 95%;
     margin:5px;
 }
-
 
 
 @media (max-width: 1075px) {
@@ -1595,9 +1612,6 @@ h2{
 
 
 
-
-
-
 /* Responsive Styles */
 @media (max-width: 768px) {
     .container {
@@ -1625,8 +1639,10 @@ h2{
     .main-body h1 {
         font-size: 40px; /* Smaller heading for mobile */
         position: relative; /* Adjust position for mobile */
-        top: 10%; /* Adjust vertical position */
-        left: 0; /* Center text */
+        top:48%;
+        left:-13%; /* Center text */
+        margin: 0px;
+        padding-top: 25px;
     }
 
     .main-body-p {
@@ -1688,7 +1704,6 @@ h2{
 }
 
 
-
 @media (max-width: 768px) {
     .volunteer-member {
         width: 45%; /* 2 cards in a row */
@@ -1727,7 +1742,7 @@ h2{
 @media (max-width: 768px) {
     .section3 h2 {
         font-size: 32px;
-        padding-left: 20px;
+        padding-left: 12px;
     }
 
     .sec3txt-img {
@@ -1741,12 +1756,13 @@ h2{
     }
 
     .sec3img {
-        width: 100%; /* Full width on smaller screens */
+        width: 90%; /* Full width on smaller screens */
         margin-top: 20px; /* Space above the image */
+        padding: 0px;
     }
 
     .statistics {
-        flex-direction: column; /* Stack statistics vertically */
+        flex-direction: row; /* Stack statistics vertically */
         padding: 20px 0; /* Add padding for spacing */
     }
 
@@ -1766,26 +1782,56 @@ h2{
 
 /* Media Queries for additional responsiveness */
 @media (max-width: 768px) {
-    .section5 h2 {
-        font-size: 2.5rem; /* Smaller heading size for smaller screens */
+
+     .section5 h2 {
+       margin-bottom: 0px;
+       margin: 2px;
+       font-size: 35px;
+    }  
+   
+
+    .cardtxt-sq{
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .cardtxt-rec{
+        font-size: 18px;
+        padding: 25px 0px;
+    }
+
+    #service-pr{
+        margin-right: 90px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+
+    .cardtxt-rec h3, .cardtxt-sq h3{
+        color: #00412e;
+        font-size: 16px;
+        padding-top: 10px;
+    }
+
+    .cardtxt-rec h3{
+        padding-top: 10px;
     }
 
     .section5 p {
-        font-size: 0.9rem; /* Adjust paragraph font size */
+        line-height: 1.2;
+        margin: 2px 0px;
+        padding-bottom: 12px;
     }
 
-    .unique-rect-card, .unique-square-card {
-        height: auto; /* Allow height to adjust */
-    }
-
-    .mentor-cards {
-        flex-direction: column; /* Stack cards vertically */
+    .unique-section {
+        width: 100vw;
+        padding: 40px 10px;
+        display: flex;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 
-    .mentors {
-        width: 80%; /* Make mentor cards full width on smaller screens */
-    }
+  
 }
 
 @media (max-width: 480px) {
@@ -1928,5 +1974,53 @@ h2{
 
     .social-icon {
         font-size: 18px; /* Smaller size for social icons */
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .section6 h2 {
+        font-size: 32px;
+        padding-left: 30px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .section6 p {
+        font-size: 16px;
+        width: 90%;
+        margin-bottom: 15px;
+        text-align: start;
+    }
+
+    .mentor-cards {
+        flex-wrap: wrap;
+        gap: 10px;
+        height: auto; /* Adjust height for better layout */
+    }
+
+    .mentors {
+        width: 45%; /* Reduce width to fit two cards per row */
+        margin-bottom: 20px;
+        height: 41rem;
+    }
+
+    .mentor-img img {
+        height: 620px; /* Reduce image height for smaller screens */
+    }
+
+    .mentor-txt {
+        padding: 10px;
+        max-height: 490px;
+    }
+
+    .mentor-social {
+        bottom: 2px;
+        left: 2.2rem;
+    }
+
+    .mentor-social a{
+        margin: 0px 10px;
     }
 }
