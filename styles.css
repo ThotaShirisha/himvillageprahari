@@ -1643,7 +1643,7 @@ h2{
         margin: 8px 0 5px;
     }
 
-    
+
 }
 
 
@@ -1718,6 +1718,25 @@ h2{
     }
 }
 
+
+@media (max-width: 480px) {
+
+    .section-team h2 {
+        font-size: 32px;
+        padding-left: 2px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .section-team p {
+        font-size: 16px;
+        width: 95%;
+    }
+
+    .team-member {
+        flex: 0 0 99%; 
+    }
+}
 
 
 
