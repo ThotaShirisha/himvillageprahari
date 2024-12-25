@@ -876,7 +876,6 @@ h2{
     justify-content: center;
     align-items: center;
     margin:5px;
-
 }
 
 .hexagon {
@@ -905,7 +904,32 @@ h2{
 }
 
 
+@media (max-width: 1075px) {
+
+  #gallery-heading{
+     padding-left: 20px;
+     margin-bottom: 20px;
+  }
+
+  #gallery-img{
+    display: none;
+  }
+
+  .gallery-item {
+    margin:7px;
+}
+
+ 
+
+
+}
+
+
+
+
+
 .section8 {
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -913,7 +937,6 @@ h2{
     background-color: #c0ffe1;
     width: 100vw;
     box-sizing: border-box;
-    display: flex;
     flex-direction: row;
 }
 
@@ -956,6 +979,19 @@ h2{
 .volunteer-btn:hover {
     background-color: #52b788;
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+@media (max-width: 1075px) {
+
+    #volunteer-ready{
+        width: 50%;
+    }
+ 
+    #volunteer-text-box{
+        padding: 20px;
+    }
 }
 
 
@@ -1334,13 +1370,6 @@ h2{
 
 
 
-
-
-
-
-
-
-
 @media (max-width: 768px) {
     .team-member {
         width: 90%;
@@ -1350,6 +1379,9 @@ h2{
         width: 100%;
     }
 }
+
+
+
 
 .carousel-container {
     display: flex;
