@@ -1288,6 +1288,10 @@ h2{
     }
 }
 
+@media (max-width: 480px) {
+
+}
+
 
 
 
@@ -1904,8 +1908,6 @@ h2{
 
 
 
-
-
 @media (max-width: 1200px) {
 
     .section7 h2 {
@@ -1938,7 +1940,9 @@ h2{
 
 
 
-/* Responsive Styles */
+
+          /* top section styling */
+
 @media (min-width: 481px) and (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -2061,15 +2065,23 @@ h2{
     }
 
     .section9 h2 {
-        font-size: 28px; /* Smaller heading on very small screens */
-        padding-left: 10px; /* Further reduced padding */
+        font-size: 28px; 
+        padding-left: 0px; 
+
     }
 
     .section9 p {
-        font-size: 14px; /* Smaller paragraph text */
-        width: 95%; /* Use full width for text */
+        font-size: 14px; 
+        width: 90%;
+        padding-left: 12px; 
+    }
+
+    .volunteer-img img {
+        height: 340px;
     }
 }
+
+
 
 
 /* Responsive styles */
