@@ -169,7 +169,7 @@ nav {
 
 .main-body-btn{
     position: absolute;
-    top:79%;
+    top:84%;
     left:11%;
     color: #cdcdcd;
     font-size: 20px;
@@ -573,11 +573,11 @@ h2{
     color: #2d6a4f;
     font-size: 42px;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     text-align: left;
     align-self: flex-start; /* Aligns the h2 to the left */
-    margin-left: 0; /* Optional: Removes default margin */
+    margin-left: 24px; /* Optional: Removes default margin */
 }
 
 .section5 p {
@@ -585,8 +585,8 @@ h2{
     font-size: 18px;
     line-height: 1.6;
     text-align: justify; 
-    margin: 20px auto;
-    width: 85%;
+    margin: 10px auto;
+    width: 95%;
 }
 
 .unique-section {
@@ -860,7 +860,7 @@ h2{
     line-height: 1.6;
     text-align: justify;
     margin-bottom: 20px;
-    width: 85%; /* Ensure the text takes up 60% of the width */
+    width: 90%; /* Ensure the text takes up 60% of the width */
 }
 
 .mentor-cards {
@@ -1311,7 +1311,9 @@ h2{
     color: #2d6a4f;
     margin-bottom: 20px;
     font-weight: bold;
+    padding-left: 20px;
 }
+
 
 .section10 p {
     font-size: 18px;
@@ -1324,7 +1326,7 @@ h2{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
     padding: 0 10%;
 }
 
@@ -1334,11 +1336,14 @@ h2{
     margin-bottom: 20px;
 }
 
+
 .address h3, .map h3 {
     font-size: 24px;
     color: #333;
     margin-bottom: 10px;
 }
+
+
 
 .address p {
     font-size: 16px;
@@ -1857,6 +1862,10 @@ h2{
     margin-right: auto;
 }
 
+#our-valun-heading{
+   margin-left: 40px;
+}
+
 .volunteer-cards {
     display: flex;
     flex-wrap: wrap;
@@ -2003,26 +2012,26 @@ h2{
     }
 
     .nav-links li {
-        margin-left: 0; /* Remove left margin */
-        margin-bottom: 10px; /* Add space between links */
+        margin-left: 0; 
+        margin-bottom: 10px; 
     }
 
     .cards {
-        flex-direction: column; /* Stack cards vertically */
+        flex-direction: column;
     }
 
     .card1, .card2 {
-        width: 100%; /* Full width for cards */
-        margin: 10px 0; /* Space between cards */
+        width: 100%; 
+        margin: 10px 0; 
     }
 
     .txt-card1 {
-        font-size: 30px; /* Smaller text size */
+        font-size: 30px; 
     }
 
     .txt-card1 p {
-        font-size: 14px; /* Smaller paragraph text */
-        width: 90%; /* Use more width */
+        font-size: 14px; 
+        width: 90%; 
     }
 
     h1 {
