@@ -238,12 +238,12 @@ nav {
     .main-body-des{
         top:35%;
         left:11%;
-        width:50%;
+        width:70%;
         font-size: 15px;
     }
 
     .main-body-btn{
-        top:78%;
+        top:65.3%;
         left:11%;
         padding:5px 10px;
         font-size: 17px;
@@ -494,13 +494,25 @@ h2{
 
 
 
-@media (min-width: 481px) and (max-width: 1075px) {
+@media (min-width: 769px) and (max-width: 1075px) {
 
     .section3 h2 {
         margin-bottom: 10px;
     }
 
 }
+
+@media (max-width: 768px)  {
+    .sec3img img {
+        width: 95%;
+        height: 340px;
+        object-fit: cover; 
+        border-radius: 10px;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }  
+}
+
 
 @media (max-width: 480px) {
     .section3 p {
@@ -717,6 +729,7 @@ h2{
    
     .section5 h2 {
        margin-bottom: 0px;
+       margin-left: 0px;
     }  
    
 
@@ -734,6 +747,7 @@ h2{
         margin-right: 140px;
         margin-top: 4px;
         margin-bottom: 4px;
+        width: 90%;
     }
 
     .cardtxt-rec h3, .cardtxt-sq h3{
@@ -1421,7 +1435,7 @@ h2{
     }
 
     .form-group-half {
-        width: 49.5%;
+        width: 48%;
     }
 
     #message{
@@ -1430,10 +1444,22 @@ h2{
 
 }
 
+@media (max-width: 480px) {
+
+    .section10 h3 {
+        padding-left: 0px;
+    }  
+
+
+}
+
+
+
 /* footer  code starts  */
 .footerContainer{
     background:#F5F5F5;
 }
+
 footer{
     width: 100%;
     /* position: absolute; */
@@ -1484,12 +1510,8 @@ footer{
    
     font-style: normal;
     font-size:large;
-height: fit-content;    
+    height: fit-content;    
     
-
-
-
-
 }
 
 .footercol ul li{
@@ -1505,8 +1527,6 @@ height: fit-content;
 .footercol ul li a:hover{
     color: rgba(22, 151, 48, 0.719);
 }
-
-
 
 
 
@@ -2370,12 +2390,9 @@ footer .underline span{
 
 
 
-
-
-
           /* top section styling */
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 482px) and (max-width: 768px) {
     .container {
         flex-direction: column;
         align-items: flex-start;
@@ -2399,25 +2416,26 @@ footer .underline span{
     }
 
     .main-body h1 {
-        font-size: 40px; /* Smaller heading for mobile */
-        position: relative; /* Adjust position for mobile */
-        top:48%;
-        left:-13%; /* Center text */
+        font-size: 50px;  
+        top:32.4%;
+        left:10.7%; 
         margin: 0px;
         padding-top: 25px;
     }
 
     .main-body-p {
-        font-size: 18px; /* Smaller paragraph text */
+        font-size: 18px;
     }
 
     .main-body-des {
-        font-size: 16px; /* Smaller description text */
+        font-size: 16px; 
     }
 
     .main-body-btn {
-        font-size: 16px; /* Smaller button text */
-        padding: 8px 16px; /* Adjust padding */
+        font-size: 16px; 
+        padding: 8px 16px; 
+        top:83%;
+        left:11%;
     }
 
     .volunteer-member {
@@ -2498,9 +2516,13 @@ footer .underline span{
 
     .section9 h2 {
         font-size: 28px; 
-        padding-left: 0px; 
+        padding-left: 0px;
 
     }
+
+    #our-valun-heading{
+        margin-left: 14px;
+     }
 
     .section9 p {
         font-size: 14px; 
@@ -2788,7 +2810,6 @@ footer .underline span{
 
 @media (max-width: 480px) {
 
-    
     .section6 h2 {
         font-size: 32px;
         padding-left: 16px;
