@@ -1039,162 +1039,604 @@ h2{
     }
 }
  
+  .dm-flip-card {
+    
+    position:relative; 
+    width : 300px;
+    height : 300px;
+    background:transparent;
+    transform-style: preserve-3d;
+    perspective: 2000px;
+      
+  } 
+  
+  .dm-front-card {
+    
+     position:absolute;
+     height:100%;
+     width:100%;   
+     backface-visibility: hidden;
+     transition: transform 1s;
+  
+     background-image:url('g1.jpg');
+     background-size:cover;
+     background-positon:center center;
+       
+  }
+  
+  /*Just overlay color of front image*/
+  
+  .dm-front-card:after {
+    
+    content:'';
+    position:absolute;
+    height:100%;
+    width:100%;
+    background:#1B0036;
+    top:0;
+    left:0;
+    opacity:0.5;
+    
+  }
+    
+  .dm-back-card {
+    
+     position:absolute;
+     height:100%;
+     width:100%;
+     background-image: url('g2.jpg');
+     backface-visibility: hidden;
+     transform:rotateY(180deg); /*-180deg to flip direction*/
+     transition: transform 1s;
+     justify-content:center;
+     align-items:center;
+     display:flex;
+     flex-direction:column;
+     
+    
+  }
+  
+  .dm-flip-card:hover .dm-front-card {
+          
+      transform: rotateY(-180deg); /*180deg to flip direction*/
+          
+  }
+      
+  .dm-flip-card:hover .dm-back-card {
+          
+      transform:rotateY(0deg);
+          
+  }
+  
+  
+  
+  /* Same Code as above but instead of rotateY we use rotateX*/
+  
+  
+  .dm-flip-card2 {
+    
+    position:relative; 
+    width : 300px;
+    height : 300px;
+    background:transparent;
+    transform-style: preserve-3d;
+    perspective: 2000px;
+      
+  } 
+  
+  .dm-front-card2 {
+    
+     position:absolute;
+     height:100%;
+     width:100%;   
+     backface-visibility: hidden;
+     transition: transform 1s;
+  
+     background-image:url('g3.jpg');
+     background-size:cover;
+     background-positon:center center;
+       
+  }
+  
+  /*Just overlay color of front image*/
+  
+  .dm-front-card2:after {
+    
+    content:'';
+    position:absolute;
+    height:100%;
+    width:100%;
+    background:#1B0036;
+    top:0;
+    left:0;
+    opacity:0.5;
+    
+  }
+    
+  .dm-back-card2 {
+    
+     position:absolute;
+     height:100%;
+     width:100%;
+     background-image: url('g4.jpg');
+     backface-visibility: hidden;
+     transform:rotateX(180deg); /*-180deg to flip direction*/
+     transition: transform 1s;
+     justify-content:center;
+     align-items:center;
+     display:flex;
+     flex-direction:column;
+     
+    
+  }
+  
+  .dm-flip-card2:hover .dm-front-card2 {
+          
+      transform: rotateY(-180deg); /*180deg to flip direction*/
+          
+  }
+      
+  .dm-flip-card2:hover .dm-back-card2 {
+          
+      transform:rotateY(0deg);
+          
+  }
+  .dm-flip-card3 {
+    
+    position:relative; 
+    width : 300px;
+    height : 300px;
+    background:transparent;
+    transform-style: preserve-3d;
+    perspective: 2000px;
+      
+  } 
+  
+  .dm-front-card3 {
+    
+     position:absolute;
+     height:100%;
+     width:100%;   
+     backface-visibility: hidden;
+     transition: transform 1s;
+  
+     background-image:url('g5.jpg');
+     background-size:cover;
+     background-positon:center center;
+       
+  }
+  
+  /*Just overlay color of front image*/
+  
+  .dm-front-card3:after {
+    
+    content:'';
+    position:absolute;
+    height:100%;
+    width:100%;
+    background:#1B0036;
+    top:0;
+    left:0;
+    opacity:0.5;
+    
+  }
+    
+  .dm-back-card3 {
+    
+     position:absolute;
+     height:100%;
+     width:100%;
+     background-image: url('g6.jpg');
+     backface-visibility: hidden;
+     transform:rotateY(180deg); /*-180deg to flip direction*/
+     transition: transform 1s;
+     justify-content:center;
+     align-items:center;
+     display:flex;
+     flex-direction:column;
+     
+    
+  }
+  
+  .dm-flip-card3:hover .dm-front-card3 {
+          
+      transform: rotateY(-180deg); /*180deg to flip direction*/
+          
+  }
+      
+  .dm-flip-card3:hover .dm-back-card3 {
+          
+      transform:rotateY(0deg);
+          
+  }
+  
+  .dm-flip-card5 {
+    
+    position:relative; 
+    width : 300px;
+    height : 300px;
+    background:transparent;
+    transform-style: preserve-3d;
+    perspective: 2000px;
+      
+  } 
+  
+  .dm-front-card5 {
+    
+     position:absolute;
+     height:100%;
+     width:100%;   
+     backface-visibility: hidden;
+     transition: transform 1s;
+  
+     background-image:url('g7.jpg');
+     background-size:cover;
+     background-positon:center center;
+       
+  }
+  
+  /*Just overlay color of front image*/
+  
+  .dm-front-card5:after {
+    
+    content:'';
+    position:absolute;
+    height:100%;
+    width:100%;
+    background:#1B0036;
+    top:0;
+    left:0;
+    opacity:0.5;
+    
+  }
+    
+  .dm-back-card5 {
+    
+     position:absolute;
+     height:100%;
+     width:100%;
+     background-image: url('g8.jpg');
+     backface-visibility: hidden;
+     transform:rotateY(180deg); /*-180deg to flip direction*/
+     transition: transform 1s;
+     justify-content:center;
+     align-items:center;
+     display:flex;
+     flex-direction:column;
+     
+    
+  }
+  
+  .dm-flip-card5:hover .dm-front-card5 {
+          
+      transform: rotateY(-180deg); /*180deg to flip direction*/
+          
+  }
+      
+  .dm-flip-card5:hover .dm-back-card5 {
+          
+      transform:rotateY(0deg);
+          
+  }
+  
+  .dm-flip-card7 {
+    
+    position:relative; 
+    width : 300px;
+    height : 300px;
+    background:transparent;
+    transform-style: preserve-3d;
+    perspective: 2000px;
+      
+  } 
+  
+  .dm-front-card7 {
+    
+     position:absolute;
+     height:100%;
+     width:100%;   
+     backface-visibility: hidden;
+     transition: transform 1s;
+  
+     background-image:url('g9.jpg');
+     background-size:cover;
+     background-positon:center center;
+       
+  }
+  
+  /*Just overlay color of front image*/
+  
+  .dm-front-card7:after {
+    
+    content:'';
+    position:absolute;
+    height:100%;
+    width:100%;
+    background:#1B0036;
+    top:0;
+    left:0;
+    opacity:0.5;
+    
+  }
+    
+  .dm-back-card7 {
+    
+     position:absolute;
+     height:100%;
+     width:100%;
+     background-image: url('g10.jpg');
+     backface-visibility: hidden;
+     transform:rotateY(180deg); /*-180deg to flip direction*/
+     transition: transform 1s;
+     justify-content:center;
+     align-items:center;
+     display:flex;
+     flex-direction:column;
+     
+    
+  }
+  
+  .dm-flip-card7:hover .dm-front-card7 {
+          
+      transform: rotateY(-180deg); /*180deg to flip direction*/
+          
+  }
+      
+  .dm-flip-card7:hover .dm-back-card7 {
+          
+      transform:rotateY(0deg);
+          
+  }
 
-
+  .dm-flip-card4 {
+    
+    position:relative; 
+    width : 300px;
+    height : 300px;
+    background:transparent;
+    transform-style: preserve-3d;
+    perspective: 2000px;
+      
+  } 
+  
+  .dm-front-card4 {
+    
+     position:absolute;
+     height:100%;
+     width:100%;   
+     backface-visibility: hidden;
+     transition: transform 1s;
+  
+     background-image:url('g11.jpg');
+     background-size:cover;
+     background-positon:center center;
+       
+  }
+  
+  /*Just overlay color of front image*/
+  
+  .dm-front-card4:after {
+    
+    content:'';
+    position:absolute;
+    height:100%;
+    width:100%;
+    background:#1B0036;
+    top:0;
+    left:0;
+    opacity:0.5;
+    
+  }
+    
+  .dm-back-card4 {
+    
+     position:absolute;
+     height:100%;
+     width:100%;
+     background-image: url('g12.jpg');
+     backface-visibility: hidden;
+     transform:rotateX(180deg); /*-180deg to flip direction*/
+     transition: transform 1s;
+     justify-content:center;
+     align-items:center;
+     display:flex;
+     flex-direction:column;
+     
+    
+  }
+  
+  .dm-flip-card4:hover .dm-front-card4 {
+          
+      transform: rotateY(-180deg); /*180deg to flip direction*/
+          
+  }
+      
+  .dm-flip-card4:hover .dm-back-card4 {
+          
+      transform:rotateY(0deg);
+          
+  }.dm-flip-card6 {
+    
+    position:relative; 
+    width : 300px;
+    height : 300px;
+    background:transparent;
+    transform-style: preserve-3d;
+    perspective: 2000px;
+      
+  } 
+  
+  .dm-front-card6 {
+    
+     position:absolute;
+     height:100%;
+     width:100%;   
+     backface-visibility: hidden;
+     transition: transform 1s;
+  
+     background-image:url('g13.jpg');
+     background-size:cover;
+     background-positon:center center;
+       
+  }
+  
+  /*Just overlay color of front image*/
+  
+  .dm-front-card6:after {
+    
+    content:'';
+    position:absolute;
+    height:100%;
+    width:100%;
+    background:#1B0036;
+    top:0;
+    left:0;
+    opacity:0.5;
+    
+  }
+    
+  .dm-back-card6 {
+    
+     position:absolute;
+     height:100%;
+     width:100%;
+     background-image: url('g14.jpg');
+     backface-visibility: hidden;
+     transform:rotateX(180deg); /*-180deg to flip direction*/
+     transition: transform 1s;
+     justify-content:center;
+     align-items:center;
+     display:flex;
+     flex-direction:column;
+     
+    
+  }
+  
+  .dm-flip-card6:hover .dm-front-card6 {
+          
+      transform: rotateY(-180deg); /*180deg to flip direction*/
+          
+  }
+      
+  .dm-flip-card6:hover .dm-back-card6 {
+          
+      transform:rotateY(0deg);
+          
+  }.dm-flip-card8 {
+    
+    position:relative; 
+    width : 300px;
+    height : 300px;
+    background:transparent;
+    transform-style: preserve-3d;
+    perspective: 2000px;
+      
+  } 
+  
+  .dm-front-card8 {
+    
+     position:absolute;
+     height:100%;
+     width:100%;   
+     backface-visibility: hidden;
+     transition: transform 1s;
+  
+     background-image:url('g15.jpg');
+     background-size:cover;
+     background-positon:center center;
+       
+  }
+  
+  /*Just overlay color of front image*/
+  
+  .dm-front-card8:after {
+    
+    content:'';
+    position:absolute;
+    height:100%;
+    width:100%;
+    background:#1B0036;
+    top:0;
+    left:0;
+    opacity:0.5;
+    
+  }
+    
+  .dm-back-card8 {
+    
+     position:absolute;
+     height:100%;
+     width:100%;
+     background-image: url('g16.jpg');
+     backface-visibility: hidden;
+     transform:rotateX(180deg); /*-180deg to flip direction*/
+     transition: transform 1s;
+     justify-content:center;
+     align-items:center;
+     display:flex;
+     flex-direction:column;
+     
+    
+  }
+  
+  .dm-flip-card8:hover .dm-front-card8 {
+          
+      transform: rotateY(-180deg); /*180deg to flip direction*/
+          
+  }
+      
+  .dm-flip-card8:hover .dm-back-card8 {
+          
+      transform:rotateY(0deg);
+          
+  }
+  
 .section7{
-    width:100vw;
-    padding: 50px;
-    background-color: #ffffff;
+  width:100vw;
+  padding: 50px;
+  background-color: #ffffff;
+  height: 100vh;
 }
 
 .section7 h2 {
-    color: #2d6a4f;
-    font-size: 42px;
-    font-weight: bold;
-    text-align: left;
-    margin-bottom: 30px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    padding-left: 50px;
+  color: #2d6a4f;
+  font-size: 42px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  padding-left: 50px;
+  margin-bottom: 20px;
+  
 }
 
 .section7 p {
-    color: #434242;
-    font-size: 18px;
-    line-height: 1.6;
-    text-align: justify;
-    margin-bottom: 20px;
-    width: 70%; /* Ensure the text takes up 60% of the width */
-    padding-left: 80px;
+  color: #434242;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 110px;
+  width: 70%; /* Ensure the text takes up 60% of the width */
+  padding-left: 80px;
 
 }
 
 .photo-gallery {
-    padding:50px;
-    background-color: #ffffff;
+  padding:50px;
+  background-color: #ffffff;
 }
 
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap:2px;
-
-}
-
-.gallery-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin:5px;
-}
-
-.hexagon {
-    position: relative;
-    width: 320px;
-    height: 300px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
-
-.hexagon img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.hexagon:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-}
-
-.hexagon:hover img {
-    transform: scale(1.1);
-}
-
-
-@media (max-width: 1075px) {
-
-  #gallery-heading{
-     padding-left: 20px;
-     margin-bottom: 20px;
-  }
-
-  #gallery-img{
-    display: none;
-  }
-
-  .gallery-item {
-    margin:7px;
-}
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:1px;
+  margin-bottom: 150px;
+  margin-top: -150px;
 
 }
 
 
 
-
-
-@media (max-width: 768px) {
-    .section7 {
-        padding: 10px;
-    }
-
-    .section7 h2 {
-        font-size: 20px; 
-        text-align: left;
-        padding-left: 0;
-        margin-bottom: 15px;
-    }
-
-    .section7 p {
-        font-size: 17px; 
-        width: 90%; 
-        padding-left: 0;
-        text-align: left;
-        margin: 5px 0px;
-
-    }
-
-    .photo-gallery {
-        padding: 5px;
-    }
-
-    .gallery {
-        grid-template-columns: repeat(2, 1fr); /* Two columns */
-        gap: 2px; /* Minimal spacing */
-    }
-
-    .gallery-item {
-        margin: 3px 0;
-    }
-
-    .hexagon {
-        width: 100%; /* Make hexagon responsive */
-        max-width: 200px; /* Limit maximum width */
-        aspect-ratio: 1 / 1; /* Keep the aspect ratio as 1:1 */
-        position: relative;
-        overflow: hidden;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-        margin: 0 auto; 
-    }
-
-    .hexagon img {
-        width: 100%; 
-        height: 100%; /* Ensure it takes up the full container */
-        object-fit: cover; /* Maintain image aspect ratio while covering the container */
-        transition: transform 0.5s ease;
-    }
-
-    .hexagon:hover {
-        transform: translateY(-1px); /* Minimal hover effect */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-    }
-
-    .hexagon:hover img {
-        transform: scale(1.05); /* Slight zoom on hover */
-    }
-}
 
 
 
